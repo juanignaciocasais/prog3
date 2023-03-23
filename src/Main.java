@@ -22,5 +22,25 @@ public class Main {
         System.out.println("Marca:" + auto.marca);
         System.out.println("Modelo:" + auto.modelo);
         System.out.println("Patente:" + auto.getPatente());
+
+        System.out.println("-------------------------  Ejercicio 3  --------------------------");
+
+        Articulo notebook = new Articulo();
+
+        notebook.setMarca("HP");
+        notebook.setModelo("Probook");
+
+        System.out.println("Marca: " + notebook.getMarca());
+        System.out.println("Modelo: " + notebook.getModelo());
+
+        System.out.println("-------------------------  Ejercicio 4  --------------------------");
+
+        Cine savoy = new Cine();
+
+        savoy.setPelicula("Volver al futuro");
+        savoy.setHorario("22hs");
+
+        System.out.println(savoy.obtenerCartelera());
+
     }
 }
