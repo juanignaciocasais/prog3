@@ -41,6 +41,55 @@ public class Main {
         savoy.setHorario("22hs");
 
         System.out.println(savoy.obtenerCartelera());
+        System.out.println("-------------------------  Ejercicio 5  --------------------------");
+
+        Cine atlas = new Cine();
+
+        atlas.setPelicula("Esperando la Carroza");
+        atlas.setHorario("19hs");
+
+        System.out.println(atlas.obtenerCartelera());
+
+        savoy.setPelicula("Rocky 4");
+        savoy.setHorario("20hs");
+
+        System.out.println(savoy.obtenerCartelera());
+
+        System.out.println("-------------------------  Ejercicio 6  --------------------------");
+
+        Fruta manzana = new Fruta("Roja", 180, true);
+        Fruta banana = new Fruta();
+
+        banana.setColor("Amarillo");
+        banana.setPeso(300);
+        banana.setEsEstacional(true);
+
+        System.out.print("Manzana :");
+        System.out.println(manzana.esComestible());
+        System.out.print("Banana :");
+        System.out.println(banana.esComestible());
+
+        System.out.println("-------------------------  Ejercicio 7  --------------------------");
+
+        Ninja maestro = new Ninja();
+        Ninja alumno = new Ninja();
+
+        maestro.setArteMarcial("Karate");
+        maestro.setArma("Katana");
+        maestro.setFuerza(400);
+        maestro.setSalto(50);
+
+        alumno.setArteMarcial("Karate");
+        alumno.setArma("Nunchakus");
+        alumno.setFuerza(300);
+        alumno.setSalto(35);
+
+        System.out.println(maestro.saltar(3));
+        System.out.println(alumno.saltar(3));
+        System.out.println(maestro.ataque());
+        System.out.println(alumno.ataque());
+
 
     }
+
 }
