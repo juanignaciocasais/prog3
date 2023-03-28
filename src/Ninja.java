@@ -37,11 +37,11 @@ public class Ninja {
         return this.salto;
     }
 
-    public Integer saltar(Integer multiplicador){
-        return this.salto * multiplicador;
+    public void saltar(Integer multiplicador){
+        System.out.println(this.salto * multiplicador);
     }
 
-    public String ataque(){
-        return this.arma + "  " + this.arteMarcial;
+    public void ataque(){
+        System.out.println(this.arma + "  " + this.arteMarcial);
     }
 }

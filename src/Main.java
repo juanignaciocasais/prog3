@@ -5,11 +5,11 @@ public class Main {
 
         Persona juan = new Persona();
 
-        juan.nombre = "Juan";
-        juan.apellido = "Perez";
+        juan.setNombre("Juan");
+        juan.setApellido("Perez");
 
-        System.out.println("Nombre:" + juan.nombre);
-        System.out.println("Apellido:" + juan.apellido);
+        System.out.println("Nombre:" + juan.getNombre());
+        System.out.println("Apellido:" + juan.getApellido());
 
         System.out.println("-------------------------  Ejercicio 2  --------------------------");
 
@@ -84,11 +84,63 @@ public class Main {
         alumno.setFuerza(300);
         alumno.setSalto(35);
 
-        System.out.println(maestro.saltar(3));
-        System.out.println(alumno.saltar(3));
-        System.out.println(maestro.ataque());
-        System.out.println(alumno.ataque());
+        maestro.saltar(3);
+        alumno.saltar(3);
+        maestro.ataque();
+        alumno.ataque();
 
+        System.out.println("-------------------------  Ejercicio 8 y 9 --------------------------");
+
+        Persona empleado1 = new Persona();
+        Visitante visita1 = new Visitante();
+        Guardia vigilador1 = new Guardia();
+
+        empleado1.setNombre("Juan");
+        empleado1.setApellido("Perez");
+        visita1.setNombre("Carla");
+        visita1.setApellido("Gomez");
+        vigilador1.setNombre("Miguel");
+        vigilador1.setApellido("López");
+
+        System.out.println(empleado1.getNombre() + " " + empleado1.getApellido());
+        System.out.println(visita1.getNombre() + " " + visita1.getApellido());
+        System.out.println(vigilador1.getNombre() + " " + vigilador1.getApellido());
+
+        System.out.println("-------------------------  Ejercicio 10 --------------------------");
+
+        Persona empleado2 = new Persona();
+        Guardia vigilador2 = new Guardia();
+
+        empleado2.setNombre("Luis");
+        empleado2.setApellido("Salvio");
+        vigilador2.setNombre("Patricio");
+        vigilador2.setApellido("Muela");
+
+        System.out.println(empleado2.presentarse());
+        System.out.println(vigilador2.presentarse());
+
+        System.out.println("-------------------------  Ejercicio 11 --------------------------");
+
+        Visitante visita2 = new Visitante();
+
+        visita2.setDni(11408789);
+
+        System.out.println(vigilador2.controlarDocumento(visita2.getDni()));
+
+        System.out.println("-------------------------  Ejercicio 12 --------------------------");
+
+        Visitante visita3 = new Visitante();
+
+        visita3.setNombre("Carlos");
+        visita3.setApellido("Perez");
+        visita3.setDni(11408789);
+
+        System.out.println(vigilador2.controlarDocumentoEj12(
+                visita3.getNombre(),
+                visita3.getApellido(),
+                visita3.getDni()));
+
+        System.out.println(visita3.getApellido());
 
     }
 
